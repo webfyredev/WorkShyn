@@ -24,44 +24,44 @@ export default function Footer(){
                         </div>
                     </div>
                     <div className="flex flex-col md:ml-30 mb-5 md:mb-0 sm:ml-0">
-                        <h3 className="font-semibold text-2xl text-white mb-2">
+                        <h3 className="font-semibold md:text-xl lg:text-2xl text-white mb-2">
                             Quick Links
                         </h3>
                         <ul className="flex flex-col space-y-3">
                             <li>
-                                <Link className="text-gray-200  hover:font-semibold text-sm">
+                                <Link to="/" className="text-gray-200  hover:font-semibold text-sm">
                                     Home
                                 </Link>
                             </li>
                             <li>
-                                <Link className="text-gray-200  hover:font-semibold text-sm">
+                                <Link to="/about" className="text-gray-200  hover:font-semibold text-sm">
                                     About Us
                                 </Link>
                             </li>   
                             <li>
-                                <Link className="text-gray-200  hover:font-semibold text-sm">
+                                <Link to="/services" className="text-gray-200  hover:font-semibold text-sm">
                                     Services
                                 </Link>
                             </li>   
                             <li>
-                                <Link className="text-gray-200 hover:font-semibold text-sm">
+                                <Link to="/blogs" className="text-gray-200 hover:font-semibold text-sm">
                                     Blogs
                                 </Link>
                             </li>   
                             <li>
-                                <Link className="text-gray-200  hover:font-semibold text-sm">
+                                <Link to="/pricing" className="text-gray-200  hover:font-semibold text-sm">
                                     Pricing
                                 </Link>
                             </li>      
                             <li>
-                                <Link className="text-gray-200 hover:font-semibold text-sm">
+                                <Link to="/contacts" className="text-gray-200 hover:font-semibold text-sm">
                                     Contacts
                                 </Link>
                             </li>   
                         </ul>
                     </div>
                     <div className="flex flex-col md:ml-20 mb-5 md:mb-0 sm:ml-0">
-                        <h3 className="font-semibold text-2xl text-white mb-2">
+                        <h3 className="font-semibold md:text-xl lg:text-2xl text-white mb-2">
                             Services
                         </h3>
                         <ul className="flex flex-col space-y-3">
@@ -92,8 +92,8 @@ export default function Footer(){
                             </li>        
                         </ul>
                     </div>
-                    <div className="flex flex-col md:ml-10 mb-5 md:mb-0">
-                        <h3 className="font-semibold text-2xl text-white mb-2">
+                    <div className="flex flex-col mb-5 md:mb-0">
+                        <h3 className="font-semibold lg:text-2xl md:text-xl text-white mb-2">
                             Contact Info
                         </h3>
                         <ul className="flex flex-col space-y-3">
@@ -118,7 +118,7 @@ export default function Footer(){
                     </div>
                 </main>
                 <aside className="w-full items-center justify-center flex mt-5 py-2">
-                    <p className="font-semibold text-sm text-white">&copy; {date} ShynWorks Cleaning Services. All right reserved.</p>
+                    <p className="font-semibold text-sm text-white">&copy; {date} <Link to="mailto:shynworks@gmail.com" className="hover:text-[#4CE0B7] transition">ShynWorks</Link> Cleaning Services. All right reserved.</p>
                 </aside>
             </footer>
         </>

@@ -34,32 +34,32 @@ export default function Navbar(){
                     </Link>
                     <ul className="hidden md:hidden lg:flex flex-row items-center space-x-10">
                         <li >
-                            <Link className="text-[14px] text-white font-semibold hover:text-[#00C896] transition-all duration-300">
+                            <Link to="/" className="text-[14px] text-white font-semibold hover:text-[#00C896] transition-all duration-300">
                                 Home
                             </Link>
                         </li>
                         <li >
-                            <Link className="text-[14px] text-white font-semibold hover:text-[#00C896] transition-all duration-300">
+                            <Link to="/about" className="text-[14px] text-white font-semibold hover:text-[#00C896] transition-all duration-300">
                                 About
                             </Link>
                         </li>
                         <li >
-                            <Link className="text-[14px] text-white font-semibold hover:text-[#00C896] transition-all duration-300">
+                            <Link to="/services" className="text-[14px] text-white font-semibold hover:text-[#00C896] transition-all duration-300">
                                 Services
                             </Link>
                         </li>
                         <li >
-                            <Link className="text-[14px] text-white font-semibold hover:text-[#00C896] transition-all duration-300">
+                            <Link to="/blogs" className="text-[14px] text-white font-semibold hover:text-[#00C896] transition-all duration-300">
                                 Blogs
                             </Link>
                         </li>
                         <li >
-                            <Link className="text-[14px] text-white font-semibold hover:text-[#00C896] transition-all duration-300">
+                            <Link to="/pricing" className="text-[14px] text-white font-semibold hover:text-[#00C896] transition-all duration-300">
                                 Pricing
                             </Link>
                         </li>
                         <li >
-                            <Link className="text-[14px] text-white font-semibold hover:text-[#00C896] transition-all duration-300">
+                            <Link to="/contacts" className="text-[14px] text-white font-semibold hover:text-[#00C896] transition-all duration-300">
                                 Contacts
                             </Link>
                         </li>
@@ -67,7 +67,7 @@ export default function Navbar(){
                             Book Now
                         </button>
                     </ul>
-                    <button className="md:hidden mr-5 text-[#80ECC9] cursor-pointer hover:text-white transition-all duration-300" onClick={() => setIsOpen(!isOpen)}>
+                    <button className="lg:hidden mr-5 text-[#80ECC9] cursor-pointer hover:text-white transition-all duration-300" onClick={() => setIsOpen(!isOpen)}>
                         {isOpen ? <FaTimes  size={25}/> : <FaBars size={25} />}
                     </button>
 

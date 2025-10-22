@@ -2,7 +2,7 @@ import Navbar from "../components/navbar";
 import HeroSlider from "../components/hero";
 import BookingMenu from "../components/book";
 import AboutUs from "../components/about_us";
-import Services from "../components/services";
+import Service from "../components/services";
 import Testimonial from "../components/testimonial";
 import Blogs from "../components/blogs";
 import Pricing from "../components/pricing";
@@ -16,7 +16,7 @@ export default function Home(){
             <HeroSlider />
             <BookingMenu />
             <AboutUs />
-            <Services />
+            <Service />
             <Testimonial />
             <Blogs />
             <Pricing />

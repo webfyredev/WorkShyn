@@ -3,8 +3,12 @@ import blogImg2 from "../images/stock/stock6.jpg"
 import blogImg3 from "../images/stock/stock10.jpg"
 import { motion } from "framer-motion"
 import { serviceCardEffects, cardHover, cardClicksEffects, scrollToLeft, ScrollToTop, scrollToBottom, scrollToRight } from "../effects/motion"
+import Navbar from "../components/navbar"
+import PageHeader from "../components/pageHeader"
+import Footer from "../components/footer"
+import blogImgHeader from '../images/bgS3.webp'
 
-export default function Blogs(){
+export default function BlogPage(){
     const blogs = [
         {
             id : 1,
@@ -19,14 +23,37 @@ export default function Blogs(){
             text : 'Switching to green cleaning isn’t just good for the planet — it’s healthier for your family. Here’s how to start today -- Hit us help lets help you out'
         },
         {
-            id : 1,
+            id : 3,
             image : blogImg3,
             title : 'How Often Should You Deep Clean Your Home?',
             text : 'A clean home boosts your comfort and health — but deep cleaning too often (or too little) can be wasteful. Here’s the perfect schedule.'
         },
+        {
+            id : 4,
+            image : blogImg3,
+            title : 'Why professional cleaning saves you Money Long-Term',
+            text : 'Think hiring a clear is expensive? Discover how consistent professional cleaning actutally reduces repairs and replacement costs in your home'
+        },
+        {
+            id : 5,
+            image : blogImg3,
+            title : 'How Often Should you really clean your Space',
+            text : 'From daily touch-ups to deep cleaning, learn the right cleaning schedule to keep your home fresh without overdoing it'
+        },
+        {
+            id : 6,
+            image : blogImg3,
+            title : 'The Power of a Clean Workspace',
+            text : 'Clean spaces boost productivity and peace of mind -- here is why business and freelancers are investing in regular cleaning services'
+        },
     ]
     return(
         <>
+        <Navbar />
+        <PageHeader 
+        image = {blogImgHeader}
+        title = 'Blog'
+        />
             <section className="py-16 overflow-hidden">
                 <div className="max-w-8xl mx-auto px-6 text-center">
                     <motion.h2 {...ScrollToTop} className="text-2xl lg:text-3xl font-bold mb-2 text-[#4CE0B7]">
@@ -54,6 +81,7 @@ export default function Blogs(){
 
                 </div>
             </section>
+        <Footer />
         </>
     );
 }

@@ -5,7 +5,7 @@ import services4 from '../images/stock/stock5.jpg'
 import services5 from '../images/stock/stock1.jpg'
 import { motion } from 'framer-motion'
 import { ScrollToTop, cardHover, scrollToBottom, scrollToLeft, serviceCardEffects, cardClicksEffects } from '../effects/motion'
-export default function Services(){
+export default function Service(){
     const services = [
         {
             id : 1,

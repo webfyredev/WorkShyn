@@ -80,7 +80,7 @@ function SlideInner({ slide }) {
         </motion.h3>
         
         <motion.h1
-          className="text-3xl md:text-5xl h-15 font-bold leading-tight text-[#80ECC9] mb-4"
+          className="text-2xl md:text-4xl lg:text-5xl h-15 font-bold leading-tight text-[#80ECC9] mb-4"
           initial={{ opacity: 0, y: 40 }}
           animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ duration: 0.7 }}

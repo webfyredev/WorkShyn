@@ -26,13 +26,13 @@ export default function AboutUs(){
     ]
     return(
         <>
-            <div className="flex w-full h-150 px-5 py-10 object-cover">
-            <motion.img {...scrollToRight} src={aboutImg} className='w-1/2 h-full'/>
-            <motion.div {...scrollToLeft} className='w-1/2 h-full px-10 py-5'>
+            <div className="lg:flex lg:flex-row flex flex-col w-full lg:h-150 h-auto px-5 py-10 object-cover">
+            <motion.img {...scrollToRight} src={aboutImg} className='lg:w-1/2 w-full h-full'/>
+            <motion.div {...scrollToLeft} className='lg:w-1/2 w-full h-full lg:px-10 py-5'>
                 <h3 className='font-semibold text-[#0077B6]'>
                     Learn About-Us
                 </h3>
-                <h2 className='text-3xl font-bold mt-3 text-[#4CE0B7]'>
+                <h2 className='lg:text-3xl text-2xl font-bold mt-3 text-[#4CE0B7]'>
                     We Don’t Just Clean — We Create Spaces That Shine.
                 </h2>
                 <h2 className='mt-3 text-[#0077B6] italic font-semibold'>

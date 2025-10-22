@@ -23,7 +23,7 @@ body{
 }
 @media (min-width:450px) {
   .swiper-button-next, .swiper-button-prev{
-    @apply !w-5 !h-5
+    @apply !hidden
   }
   .swiper-button-next{
     @apply !right-1
@@ -34,7 +34,7 @@ body{
 }
 @media (min-width:1024px) {
   .swiper-button-next, .swiper-button-prev{
-    @apply !text-[#00C896] !w-8 !h-8
+    @apply !text-[#00C896] !w-8 !h-8 !flex
   }
   .swiper-button-next, .swiper-button-prev{
   @apply !text-[#00C896] !w-8 !h-8

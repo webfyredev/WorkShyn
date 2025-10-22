@@ -10,10 +10,10 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import slider1 from '../images/slider1.jpg'
-import slider2 from '../images/slider2.jpg'
-import slider3 from '../images/slider3.jpg'
-
+import slider1 from '../images/bgS6.webp'
+import slider2 from '../images/bgS3.webp'
+import slider3 from '../images/bgS8.webp'
+import slider4 from '../images/bgS4.webp'
 
 
 
@@ -21,6 +21,7 @@ const slides = [
   {
   id: 1,
   image: slider1,
+  sbtitle : "General Home Cleaning",
   title1: "Bringing Shine and Confort to Your Home",
   desc:
   "Experience a spotless home with ShynWorks. We handle the dirt while you enjoy the freshness -- reliable, detailed and eco-friendly",
@@ -29,6 +30,7 @@ const slides = [
 {
   id: 2,
   image: slider2,
+  sbtitle : "Deep & Post-Construction Cleaning",
   title1: "From Dust to Dazzle - We Handle It All",
   desc:
   "Whether it's post-renovation or a deep seasonal cleanup, our team makes your space sparkle again. Perfection is our standard",
@@ -37,14 +39,16 @@ const slides = [
 {
   id: 3,
   image: slider3,
-  title1: "Office & Commercial Cleaning",
+  sbtitle : "Office & Commercial Cleaning",
+  title1: "Clean Spaces. Clear Minds. Productive Teams.",
   desc:
   "Keep your workspace fresh and inspiring with ShynWorks professional office cleaning -- because c clean space boosts performance",
   t_button : "Book for Office"
 },
 {
-  id: 3,
-  image: slider3,
+  id: 4,
+  image: slider4,
+  sbtitle : "Laundry & Fabric Care",
   title1: "We Wash. We Iron. You Shine",
   desc:
   "From delicate fabrics to everyday wear, our laundry care brings freshness and confort right to your doorstep",
@@ -62,13 +66,21 @@ function SlideInner({ slide }) {
       className="relative w-full h-full bg-cover bg-center"
       style={{ backgroundImage: `url(${slide.image})` }}
     >
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/60" />
       <div
         className={`relative z-10 h-full flex flex-col justify-center px-6 lg:px-24`}
       >
-
+        <motion.h3
+          className="text-[#00C896] text-sm md:text-lg"
+          initial={{ opacity: 0, y: -8 }}
+          animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: -8 }}
+          transition={{ duration: 0.5 }}
+        >
+          {slide.sbtitle}
+        </motion.h3>
+        
         <motion.h1
-          className="text-3xl md:text-5xl h-15 font-bold leading-tight bg-gradient-to-r from-[#0077B6] to-[#00C896] text-transparent bg-clip-text mb-3"
+          className="text-3xl md:text-5xl h-15 font-bold leading-tight text-[#80ECC9] mb-4"
           initial={{ opacity: 0, y: 40 }}
           animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ duration: 0.7 }}
@@ -88,7 +100,7 @@ function SlideInner({ slide }) {
           className="bg-gradient-to-r from-[#0077B6] to-[#00C896] w-45 h-12 rounded-lg text-white font-medium flex cursor-pointer items-center justify-center mb-10"
           initial={{ opacity: 0, y: 12 }}
           animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 12 }}
-          transition={{ delay: 0.85, duration: 0.5 }} whileHover={{scale:1.05}} whileTap={{scale:0.95}}
+          transition={{duration: 0.5 }} whileHover={{scale:1.05}} whileTap={{scale:0.95}}
         >
           {slide.t_button} <FaChevronRight  className="mt-0.5 ml-1"/>
         </motion.button>

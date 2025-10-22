@@ -21,3 +21,31 @@ body{
 .swiper-pagination-bullet-active {
   @apply !bg-[#00C896]  !opacity-100;
 }
+@media (min-width:450px) {
+  .swiper-button-next, .swiper-button-prev{
+    @apply !w-5 !h-5
+  }
+  .swiper-button-next{
+    @apply !right-1
+  }
+  .swiper-button-prev{
+    @apply !left-1
+  }
+}
+@media (min-width:1024px) {
+  .swiper-button-next, .swiper-button-prev{
+    @apply !text-[#00C896] !w-8 !h-8
+  }
+  .swiper-button-next, .swiper-button-prev{
+  @apply !text-[#00C896] !w-8 !h-8
+}
+.swiper-button-next.active, .swiper-button-prev.active{
+  @apply !text-[#0077B6]
+}
+.swiper-button-next{
+  @apply !right-5
+}
+.swiper-button-prev{
+  @apply !left-5
+}
+}

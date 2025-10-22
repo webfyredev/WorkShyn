@@ -1,6 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
-import {FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import {FaFacebook, FaInstagram, FaWhatsapp, FaBars, FaTimes } from 'react-icons/fa'
+import { useState } from "react";
 export default function Navbar(){
+    const [isOpen, setIsOpen] = useState(false)
     return(
         <>
 
@@ -13,23 +15,24 @@ export default function Navbar(){
                     </div>
                     <div className="w-110 h-10 flex flex-row items-center justify-between px-2">
                         
-                        <Link className="text-[13px] text-[#0077B6] hover:text-[#00C896] font-semibold transition-all duration-300 "to="phoneto:+2349131580378">
+                        <Link className="text-[13px] text-[#0077B6] hover:text-[#00C896] font-semibold transition-all duration-300"to="phoneto:+2349131580378">
                             +234 913 1580 378
                         </Link>
+                        
                         <Link className="text-[13px] text-[#0077B6] hover:text-[#00C896] font-semibold transition-all duration-300" to="mailto:webfyre@gmail.com">
-                            webfyre@gmail.com
+                            shynworks@gmail.com 
                         </Link>
                         <p className="text-[13px] text-[#0077B6] hover:text-[#00C896] font-semibold transition-all duration-300" to="mailto:webfyre@gmail.com">
-                            Mon - Fri : 09 AM - 09 PM
+                             Mon - Fri : 09 AM - 09 PM
                         </p>
 
                     </div>
                 </div>
                 <div className="w-full h-auto px-5 py-3.5 flex justify-between items-center bg-gradient-to-r from-[#00C896] to-[#0077B6]">
                     <Link to="#" className="text-white font-bold text-2xl">
-                        WorkShyn
+                        ShynWorks
                     </Link>
-                    <ul className="flex flex-row items-center space-x-10">
+                    <ul className="hidden md:hidden lg:flex flex-row items-center space-x-10">
                         <li >
                             <Link className="text-[14px] text-white font-semibold hover:text-[#00C896] transition-all duration-300">
                                 Home
@@ -47,7 +50,12 @@ export default function Navbar(){
                         </li>
                         <li >
                             <Link className="text-[14px] text-white font-semibold hover:text-[#00C896] transition-all duration-300">
-                                Pages
+                                Blogs
+                            </Link>
+                        </li>
+                        <li >
+                            <Link className="text-[14px] text-white font-semibold hover:text-[#00C896] transition-all duration-300">
+                                Pricing
                             </Link>
                         </li>
                         <li >
@@ -59,6 +67,10 @@ export default function Navbar(){
                             Book Now
                         </button>
                     </ul>
+                    <button className="md:hidden mr-5 text-[#80ECC9] cursor-pointer hover:text-white transition-all duration-300" onClick={() => setIsOpen(!isOpen)}>
+                        {isOpen ? <FaTimes  size={25}/> : <FaBars size={25} />}
+                    </button>
+
                     
                 </div>
                 

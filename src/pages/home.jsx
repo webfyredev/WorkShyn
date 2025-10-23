@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar";
 import HeroSlider from "../components/hero";
-import BookingMenu from "../components/book";
+import BookingMenu from "../components/booking";
 import AboutUs from "../components/about_us";
 import Service from "../components/services";
 import Testimonial from "../components/testimonial";
@@ -14,9 +14,9 @@ export default function Home(){
         <>
             <Navbar />
             <HeroSlider />
-            <BookingMenu />
             <AboutUs />
             <Service />
+            <BookingMenu />
             <Testimonial />
             <Blogs />
             <Pricing />

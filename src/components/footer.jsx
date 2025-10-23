@@ -5,7 +5,7 @@ export default function Footer(){
     return(
         <>
             <footer className="w-full flex flex-col py-10 bg-gradient-to-r from-[#0077B6] to-[#00C896]">
-                <main className="w-full grid grid-cols sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-5">
+                <main className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-5">
                     <div className="flex flex-col space-y-3 mb-5 md:mb-0">
                         <h3 className="text-white font-bold text-3xl">
                             ShynWorks

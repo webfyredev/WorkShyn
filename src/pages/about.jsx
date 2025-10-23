@@ -4,7 +4,7 @@ import MidFoots from "../components/m_foot";
 import Navbar from "../components/navbar";
 import PageHeader from "../components/pageHeader";
 import Testimonial from "../components/testimonial";
-import randImg from '../images/bgS1.webp'
+import randImg from '../images/main/main6.jpg'
 import {FaSmileBeam,  FaCalendarCheck, FaBroom, FaChevronRight, FaArrowRight} from "react-icons/fa";
 
 

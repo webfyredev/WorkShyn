@@ -49,10 +49,10 @@ export default function Testimonial(){
         <>
             <section className="bg-[#F9FAFB] py-16 overflow-hidden">
                 <div className="max-w-6xl mx-auto px-6 text-center">
-                    <motion.h2 {...ScrollToTop} className="text-3xl font-bold mb-2 text-[#4CE0B7]">
+                    <motion.h2 {...ScrollToTop} className="text-xl md:text-2xl lg:text-3xl font-bold mb-2 text-[#4CE0B7]">
                         Feedback That Speaks for Itself
                     </motion.h2>
-                    <motion.p {...ScrollToTop} className="text-[#0077B6] mb-10 text-sm font-semibold">
+                    <motion.p {...ScrollToTop} className="text-[#0077B6] mb-10 text-xs lg:text-sm font-semibold">
                         Honest experiences from the people who trust ShynWorks to make their spaces sparkle.
                     </motion.p>
                     <Swiper

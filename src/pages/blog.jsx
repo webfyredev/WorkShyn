@@ -6,7 +6,7 @@ import { serviceCardEffects, cardHover, cardClicksEffects, scrollToLeft, ScrollT
 import Navbar from "../components/navbar"
 import PageHeader from "../components/pageHeader"
 import Footer from "../components/footer"
-import blogImgHeader from '../images/bgS3.webp'
+import blogImgHeader from '../images/main/main2.webp'
 
 export default function BlogPage(){
     const blogs = [

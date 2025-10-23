@@ -29,7 +29,7 @@ export default function Navbar(){
                     </div>
                 </div>
                 <div className="w-full h-auto px-5 py-3.5 flex justify-between items-center bg-gradient-to-r from-[#00C896] to-[#0077B6]">
-                    <Link to="#" className="text-white font-bold text-2xl">
+                    <Link to="/" className="text-white font-bold text-2xl">
                         ShynWorks
                     </Link>
                     <ul className="hidden md:hidden lg:flex flex-row items-center space-x-10">

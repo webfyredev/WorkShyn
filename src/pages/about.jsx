@@ -5,6 +5,8 @@ import Navbar from "../components/navbar";
 import PageHeader from "../components/pageHeader";
 import Testimonial from "../components/testimonial";
 import randImg from '../images/main/main6.jpg'
+import { motion } from "framer-motion";
+import { ScrollToTop, cardHover, scrollToBottom, scrollToLeft } from "../effects/motion";
 import {FaSmileBeam,  FaCalendarCheck, FaBroom, FaChevronRight, FaArrowRight} from "react-icons/fa";
 
 
@@ -39,16 +41,16 @@ export default function About(){
             image = {randImg}
             title = 'About'/>
             <AboutUs />
-            <div className="py-10 max-w-7xl mx-auto text-center p-5 mt-10">
-                <p className="text-[#0077B6] font-semibold mb-2">
+            <div className="py-10 max-w-7xl mx-auto text-center p-5 mt-10 bg-[#F9FAFB]">
+                <motion.p {...scrollToBottom} className="text-[#0077B6] font-semibold mb-2">
                     The ShynWorks Methods
-                </p>
-                <h3 className="text-3xl font-bold text-[#4CE0B7]">
+                </motion.p>
+                <motion.h3 {...ScrollToTop} className="text-3xl font-bold text-[#4CE0B7]">
                     Our Cleaning Process
-                </h3>
-                <div className="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+                </motion.h3>
+                <motion.div {...scrollToLeft} className="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 p-5 bg-white">
                     {process.map((work) => (
-                        <div key={work.id} className="flex flex-col p-5 shadow-md items-center p-8">
+                        <motion.div {...cardHover} key={work.id} className="lg:w-[95%] flex flex-col p-5 shadow-md items-center p-8 cursor-pointer">
                             {work.icon}
                             <h3 className="text-[#0077B6] font-semibold mb-3">
                                 {work.title}
@@ -58,9 +60,9 @@ export default function About(){
                             </p>
                             <FaArrowRight  className="text-[#4CE0B7] "/>
 
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
             <Testimonial />
             <MidFoots />

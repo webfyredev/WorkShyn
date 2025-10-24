@@ -1,6 +1,11 @@
-import blogImg from "../images/stock/stock3.jpg"
+import blogImg from "../images/stock/stock18.webp"
 import blogImg2 from "../images/stock/stock6.jpg"
-import blogImg3 from "../images/stock/stock10.jpg"
+import blogImg3 from "../images/stock/stock3.jpg"
+import blogImg4 from "../images/stock/stock11.jpg"
+import blogImg5 from "../images/stock/stock10.jpg"
+import blogImg6 from "../images/stock/stock16.jpg"
+
+
 import { motion } from "framer-motion"
 import { serviceCardEffects, cardHover, cardClicksEffects, scrollToLeft, ScrollToTop, scrollToBottom, scrollToRight } from "../effects/motion"
 import Navbar from "../components/navbar"
@@ -30,19 +35,19 @@ export default function BlogPage(){
         },
         {
             id : 4,
-            image : blogImg3,
+            image : blogImg4,
             title : 'Why professional cleaning saves you Money Long-Term',
             text : 'Think hiring a clear is expensive? Discover how consistent professional cleaning actutally reduces repairs and replacement costs in your home'
         },
         {
             id : 5,
-            image : blogImg3,
+            image : blogImg5,
             title : 'How Often Should you really clean your Space',
             text : 'From daily touch-ups to deep cleaning, learn the right cleaning schedule to keep your home fresh without overdoing it'
         },
         {
             id : 6,
-            image : blogImg3,
+            image : blogImg6,
             title : 'The Power of a Clean Workspace',
             text : 'Clean spaces boost productivity and peace of mind -- here is why business and freelancers are investing in regular cleaning services'
         },
@@ -69,7 +74,7 @@ export default function BlogPage(){
                                 <h3 className="text-md mt-3 font-semibold text-[#0077B6]">
                                     {data.title}
                                 </h3>
-                                <p className="text-[13px] mt-2">
+                                <p className="text-xs mt-2">
                                     {data.text}
                                 </p>
                                 <motion.button {...cardClicksEffects} className='my-4 text-sm px-3 rounded-sm cursor-pointer bg-[#4CE0B7] w-30 h-11 rounded-lg text-white hover:text-white transition-all font-semibold'>

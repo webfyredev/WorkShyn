@@ -15,10 +15,10 @@ export default function Contacts(){
                 <div className="w-full lg:h-150 md:h-auto h-auto flex md:flex-col sm:flex-col flex-col lg:flex-row p-5 items-center justify-center bg-[#F9FAFB]">
                     <motion.img {...scrollToRight} src={contactsBg} className="w-full lg:w-[45%] h-full object-cover"/>
                     <motion.div {...scrollToLeft} className="lw-full g:w-[50%] h-full lg:px-10 py-5 bg-white">
-                        <h3 className="font-semibold text-[#4CE0B7] text-3xl mb-3">
+                        <h3 className="font-semibold text-[#4CE0B7] lg:text-3xl md:text-2xl text-xl mb-3">
                              Get in Touch With ShynWorks
                         </h3>
-                        <p className="text-[#0077B6] text-sm">
+                        <p className="text-[#0077B6] text-xs md:text-sm">
                             Have a question or ready to book your next cleaning? 
                             We’re always here to help. Let’s make your space shine together.
                         </p>

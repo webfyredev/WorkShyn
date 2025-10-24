@@ -52,7 +52,7 @@ export default function Service(){
                 <motion.h2 {...ScrollToTop} className="text-3xl mt-2 font-bold text-[#4CE0B7]">
                     What We Offer
                 </motion.h2>
-                <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5 mt-5 p-5">
+                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5 mt-5 p-5">
                 {services.map((data) => (
                     <motion.div 
                     {...serviceCardEffects}

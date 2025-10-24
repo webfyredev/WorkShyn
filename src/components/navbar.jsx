@@ -3,9 +3,20 @@ import { Link as ScrollLink } from 'react-scroll'
 import {FaFacebook, FaInstagram, FaWhatsapp, FaBars, FaTimes } from 'react-icons/fa'
 import { motion } from "framer-motion";
 import { ScrollToTop } from "../effects/motion";
-import { useState } from "react";
+import { useState} from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 export default function Navbar(){
     const [isOpen, setIsOpen] = useState(false)
+    const navigate = useNavigate();
+    const location = useLocation();
+    const handleBookingServiceClicks = () =>{
+        if(location.pathname === '/'){
+            const section = document.getElementById('booking');
+            section?.scrollIntoView({behavior : "smooth"});
+        }else{
+            navigate('/', {state : {scrollTo : 'booking'}});
+        }
+    };
     return(
         <>
 
@@ -66,14 +77,8 @@ export default function Navbar(){
                                 Contacts
                             </NavLink>
                         </li>
-                        <button className="px-8 py-2.5 cursor-pointer text-[12px] mr-10 bg-white rounded-md font-semibold text-[#0077B6]">
-                            <ScrollLink to="booking"
-                                smooth={true}
-                                duration={600}
-                                offset={-50}
-                            >
-                                Book Now
-                            </ScrollLink>
+                        <button onClick={handleBookingServiceClicks} className="px-8 py-2.5 cursor-pointer text-[12px] mr-10 bg-white rounded-md font-semibold text-[#0077B6]">
+                            Book Now
                         </button>
                     </ul>
                     <button className="lg:hidden mr-5 text-[#80ECC9] cursor-pointer hover:text-white transition-all duration-300" onClick={() => setIsOpen(!isOpen)}>

@@ -7,15 +7,15 @@ export default function BookingMenu(){
             <div className="w-full h-auto relative mt-10">
                 <img src={bookImg}  className="w-full lg:h-120 h-80 object-cover position-center"/>
                 <div className="absolute top-0 w-full h-full inset-0 bg-black/55 flex items-center flex-col">
-                    <h2 className="md:text-3xl text-2xl lg:text-4xl lg:mt-40 mt-30 font-bold text-[#80ECC9] lg:mb-5 mb-2">
+                    <h2 className="md:text-3xl text-xl lg:text-4xl lg:mt-40 mt-30 font-bold text-[#80ECC9] lg:mb-5 mb-2">
                         Available For All Cleaning Services
                     </h2>
-                    <p className="text-white font-semibold md:text-2xl text-xl lg:text-3xl">
+                    <p className="text-white font-semibold md:text-2xl text-lg lg:text-3xl">
                         24 Hours 7 Days a Week
                     </p>
                 </div>
             </div>
-            <div className="w-full h-110 flex flex-col items-center justify-center mt-[-10%] z-1 relative mb-20">
+            <div className="w-full h-110 flex flex-col items-center justify-center lg:mt-[-10%] md:mt-[-10%] mt-[-20%] z-1 relative mb-20">
                 <form className="lg:w-[55%] w-[95%] h-full bg-[#F9FAFB] flex flex-col items-center p-5 shadow-md rounded-sm" id="booking">
                     <h2 className="md:text-2xl text-xl lg:text-3xl mb-7 font-semibold text-[#00C896]">
                         Book For A Service

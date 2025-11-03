@@ -37,17 +37,19 @@ export default function Blogs(){
                     </motion.p>
                     <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
                         {blogs.map((data, index) =>(
-                            <motion.div {...scrollToRight} {...cardHover} key={index} className="flex flex-col p-5 text-left shadow-sm ">
-                                <img src={data.image} className="object-cover"/>
-                                <h3 className="text-md mt-2 font-semibold text-[#0077B6]">
+                            <motion.div {...scrollToRight} {...cardHover} key={index} className="flex flex-col text-left shadow-sm  mb-5 rounded-md">
+                                <img src={data.image} className="object-cover w-full rounded-t-md"/>
+                                <div className="flex flex-col p-5">
+                                    <h3 className="text-md mt-2 font-semibold text-[#0077B6]">
                                     {data.title}
-                                </h3>
-                                <p className="text-xs mt-2">
-                                    {data.text}
-                                </p>
-                                <motion.button {...cardClicksEffects} className='my-4 text-sm rounded-sm cursor-pointer bg-[#4CE0B7] w-30 h-11 rounded-lg text-white hover:text-white transition-all font-semibold'>
-                                    Read More
-                        </motion.button>
+                                    </h3>
+                                    <p className="text-xs mt-2">
+                                        {data.text}
+                                    </p>
+                                    <motion.button {...cardClicksEffects} className='my-4 text-sm rounded-sm cursor-pointer bg-[#4CE0B7] w-30 h-11 rounded-lg text-white hover:text-white transition-all font-semibold'>
+                                        Read More
+                                    </motion.button>
+                                </div>
                             </motion.div>
                         ))}
                     </div>

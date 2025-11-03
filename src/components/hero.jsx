@@ -97,7 +97,7 @@ function SlideInner({ slide }) {
         </motion.p>
 
         <motion.button
-          className="bg-gradient-to-r from-[#0077B6] to-[#00C896] w-45 h-12 rounded-lg text-white font-medium flex cursor-pointer items-center justify-center mb-10"
+          className="bg-gradient-to-r from-[#0077B6] to-[#00C896] w-45 h-12 rounded-lg text-white font-medium text-[13px] md:text-sm flex cursor-pointer items-center justify-center mb-10"
           initial={{ opacity: 0, y: 12 }}
           animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 12 }}
           transition={{duration: 0.5 }} whileHover={{scale:1.05}} whileTap={{scale:0.95}}

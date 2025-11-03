@@ -1,4 +1,5 @@
 import { FaFacebook, FaInstagram, FaEnvelope, FaTwitter, FaMobile, FaMapPin } from "react-icons/fa";
+import { SiX } from "react-icons/si";
 import { Link } from "react-router-dom";
 export default function Footer(){
     const date = new Date().getFullYear();
@@ -17,10 +18,11 @@ export default function Footer(){
                             Professional home & office cleaning services designed to bring freshness, comfort, and sparkle into your space.
                         </p>
                         <div className="flex w-auto space-x-2 mt-3">
-                            <FaFacebook  className="w-10 h-10 p-2.5 bg-white text-[#0077B6] shadow-md hover:cursor-pointer rounded-full hover:bg-[#0077B6] hover:text-white transition-all hover:shadow-2xl"/>
-                            <FaInstagram  className="w-10 h-10 p-2.5 bg-white text-[#0077B6] shadow-md hover:cursor-pointer rounded-full hover:bg-[#0077B6] hover:text-white transition-all hover:shadow-2xl"/>
-                            <FaTwitter  className="w-10 h-10 p-2.5 bg-white text-[#0077B6] shadow-md hover:cursor-pointer rounded-full hover:bg-[#0077B6] hover:text-white transition-all hover:shadow-2xl"/>
-                            <FaEnvelope  className="w-10 h-10 p-2.5 bg-white text-[#0077B6] shadow-md hover:cursor-pointer rounded-full hover:bg-[#0077B6] hover:text-white transition-all hover:shadow-2xl"/>
+                            {/* <FaFacebook  className="w-9 h-9 p-2.5 bg-[#F2F2F2] text-[#0077B6] hover:cursor-pointer rounded-lg hover:bg-white transition-all hover:shadow-2xl"/> */}
+                            <FaFacebook  className="w-9 h-9 p-2.5 bg-white text-[#0077B6]  hover:cursor-pointer rounded-lg hover:bg-[#0077B6] hover:text-white transition-all hover:shadow-2xl"/>
+                            <FaInstagram  className="w-9 h-9 p-2.5 bg-white text-[#0077B6]  hover:cursor-pointer rounded-lg hover:bg-[#0077B6] hover:text-white transition-all hover:shadow-2xl"/>
+                            <SiX  className="w-9 h-9 p-2.5 bg-white text-[#0077B6] shadow-md hover:cursor-pointer rounded-lg hover:bg-[#0077B6] hover:text-white transition-all hover:shadow-2xl"/>
+                            <FaEnvelope  className="w-9 h-9 p-2.5 bg-white text-[#0077B6] shadow-md hover:cursor-pointer rounded-lg hover:bg-[#0077B6] hover:text-white transition-all hover:shadow-2xl"/>
                         </div>
                     </div>
                     <div className="flex flex-col md:ml-30 mb-5 md:mb-0 sm:ml-0">

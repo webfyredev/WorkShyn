@@ -57,17 +57,19 @@ export default function Service(){
                     <motion.div 
                     {...serviceCardEffects}
 
-                    className="flex flex-col p-5 shadow-md mb-5">
-                        <img src={data.image} className='object-cover'/>
-                        <h2 className='mt-2 font-semibold text-[#0077B6]'>
+                    className="flex flex-col shadow-md mb-5 rounded-md">
+                        <img src={data.image} className='object-cover w-full h-full rounded-t-md'/>
+                        <div className='flex flex-col p-5 rounded-b-md'>
+                            <h2 className='mt-2 font-semibold text-[#0077B6]'>
                             {data.title}
-                        </h2>
-                        <p className='text-xs mt-2'>
-                            {data.sb_title}
-                        </p>
-                        <motion.button {...cardClicksEffects} className='my-4 text-sm rounded-sm cursor-pointer bg-[#4CE0B7] w-45 h-11 rounded-lg text-white hover:text-white transition-all font-semibold'>
-                            {data.btn_text}
-                        </motion.button>
+                            </h2>
+                            <p className='text-xs mt-2'>
+                                {data.sb_title}
+                            </p>
+                            <motion.button {...cardClicksEffects} className='my-4 text-sm rounded-sm cursor-pointer bg-[#4CE0B7] w-45 h-11 rounded-lg text-white hover:text-white transition-all font-semibold'>
+                                {data.btn_text}
+                            </motion.button>
+                        </div>
                     </motion.div>
                 ))}
                 </div>
